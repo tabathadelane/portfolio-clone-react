@@ -1,16 +1,47 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import { Navbar, NavDropdown, Nav } from 'react-bootstrap';
 
 
 function Content(){
     return (
         <div>
-            <Link to="/" >About</Link>
-            <Link to="/Contact" >Contact</Link>
-            <Link to="/Trversal" >Trversal</Link>
-            <Link to="/Habitat" >Habitat</Link>
-            <Link to="/Vgct" >VGCT</Link>
-            <Link to="/Critical" >Critical</Link>
+        <Navbar collapseOnSelect expand="sm" bg="light"  >
+            <Navbar.Brand>Learn More:</Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" right></Navbar.Toggle>
+            <Navbar.Collapse id="responsive-navbar-nav" >
+                
+                <Nav className="ml-auto">
+                    <Nav.Link>
+                        <Link to="/" >About</Link>
+                    </Nav.Link>
+                    <Nav.Link>
+                        <Link to="/Contact" >Contact</Link>
+                    </Nav.Link>
+
+                    <NavDropdown className="justify-content-end" title="Projects"  id="collasible-nav-dropdown">
+
+                        <NavDropdown.Item>
+                            <Link to="/Trversal" >Trversal</Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/Habitat" >Habitat</Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/Vgct" >VGCT</Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/Critical" >Critical</Link>
+                        </NavDropdown.Item>
+
+                    </NavDropdown>
+
+
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
+
+
         </div>
     )}
 
