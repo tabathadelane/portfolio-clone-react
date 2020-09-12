@@ -8,8 +8,7 @@ function Vgct(){
         <div>
             <Container>
                 <Row>
-
-                    <Col md={{ span: 12, order: 1 }} xs={{ span: 12, order: 1 }} > <h1>Title 1</h1>
+                    <Col  md={{ span: 12, order: 1 }} xs={{ span: 12, order: 1 }} > <h1>Title 1</h1>
                     </Col>
                 </Row>
                 <Row>

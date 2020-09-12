@@ -8,10 +8,10 @@ import { faCoffee, faTree, faDiceD20, faCat, faLaptopCode } from '@fortawesome/f
 function Header(){
     return (
         <div>
-            <Container>
+            <Container className="center-header">
                 <Row >
                     <Col sm="4" >
-                        <Image fluid="md" roundedCircle alt="Headshot of Tabatha" src={require('../Assets/Img/headshot-crop.jpg')}></Image>
+                        <Image fluid="md" roundedCircle className="headshot center" alt="Headshot of Tabatha" src={require('../Assets/Img/headshot-crop.jpg')}></Image>
                     </Col>
                     <Col sm="8">
                     <h1>Tabatha Delane Young</h1>
