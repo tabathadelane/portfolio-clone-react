@@ -34,10 +34,12 @@ svg {
 .headshot {
   height: 80%;
   width: 80%;
-  border: 6px solid rgba(128, 0, 128, 0.637);
+  border: 6px solid grey;
+  /* border: 6px solid rgba(128, 0, 128, 0.637); */
 }
 .center-header {
   text-align: center;
+  padding-top:20px;
 }
 .center {
   margin: auto;
